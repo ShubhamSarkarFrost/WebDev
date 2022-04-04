@@ -1,0 +1,22 @@
+/****************************************** Tag Selector ***********************************************************/
+body{
+    margin: 0;
+}
+h1 {
+    margin-top: 0;
+}
+div {
+    background-color: #D5EEBB;
+}
+
+/*********************************** Locator Containers ***************************************************************/
+.middle-container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.bottom-container{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
