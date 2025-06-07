@@ -1,0 +1,30 @@
+.appContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in element's total width and height */
+    }
+
+.loggedInMessage {
+    background-color: #361F59; /* Same dark purple as login card */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.loggedInMessage h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #DDA0DD;
+}
+
+.loggedInMessage p {
+    font-size: 1.2em;
+    color: #DDA0DD;
+}

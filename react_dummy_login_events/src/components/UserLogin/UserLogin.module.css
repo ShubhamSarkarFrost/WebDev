@@ -1,0 +1,63 @@
+.loginCard {
+    background-color: #361F59; /* Darker purple for the card */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Max width for responsiveness */
+    text-align: center;
+    color: #FFFFFF; /* White text for contrast */
+}
+
+/* Title styling */
+.loginTitle {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #DDA0DD; /* Lighter purple for the title */
+}
+
+/* Input group styling (label + input) */
+.inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGroupLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #DDA0DD; /* Lighter purple for labels */
+}
+
+/* Input field styling */
+.inputField {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5B3B8D; /* Slightly lighter purple for input background */
+    color: #FFFFFF;
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+
+.inputField:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #DDA0DD; /* Focus ring color */
+}
+
+.loginButton {
+    background-color: #8A2BE2; /* Violet for the button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+    margin-top: 20px;
+}
+
+.loginButton:hover {
+    background-color: #6A1BAA; /* Darker violet on hover */
+}
