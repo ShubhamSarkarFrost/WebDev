@@ -1,0 +1,17 @@
+/* src/components/Chapter/Chapter.module.css */
+.chapterContent {
+    /* Basic styling for the chapter itself */
+    padding: 10px;
+}
+
+.chapterTitle {
+    color: #28a745; /* A pleasant green for titles */
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.chapterText {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
