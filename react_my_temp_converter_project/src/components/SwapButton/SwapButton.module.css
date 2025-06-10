@@ -1,0 +1,20 @@
+.swap-button {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Make it round */
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.swap-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}

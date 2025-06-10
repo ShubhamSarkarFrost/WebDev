@@ -1,0 +1,28 @@
+.input-group{
+     margin-bottom: 25px;
+}
+
+.input-group label,
+.unit-selector label {
+     display: block;
+     font-size: 1.1em;
+     margin-bottom: 8px;
+     color: #555;
+     font-weight: 500;
+}
+
+.input-group input[type="text"] {
+     width: calc(100% - 20px);
+     padding: 12px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     font-size: 1.2em;
+     box-sizing: border-box; /* Include padding in width */
+     transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus {
+     outline: none;
+     border-color: #007bff;
+     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
