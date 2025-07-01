@@ -1,0 +1,21 @@
+/* ThemeToggleButton.module.css */
+
+.button {
+    /* Common button styles if you want them here, or inherit from a global stylesheet */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.themeToggleButton {
+    background-color: #6c757d; /* Gray for theme toggle */
+    color: white;
+    padding: 8px 15px; /* Slightly smaller padding */
+}
+
+.themeToggleButton:hover {
+    background-color: #5a6268;
+}

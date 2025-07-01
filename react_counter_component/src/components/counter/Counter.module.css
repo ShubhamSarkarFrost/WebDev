@@ -1,0 +1,94 @@
+/* Counter.module.css */
+.counterContainer {
+    font-family: 'YourCustomFontName', Arial, sans-serif; /* Apply your custom font */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f9f9f9; /* Light mode background */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.counterIcon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-bottom: 15px; /* Space below the icon */
+    display: block; /* Ensures it takes its own line */
+    margin-left: auto;
+    margin-right: auto; /* Center the icon */
+}
+
+.counterTitle {
+    color: #333; /* Light mode text color */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    font-family: 'YourCustomFontName', Arial, sans-serif; /* Apply custom font here too if desired */
+}
+
+.countDisplay {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #555; /* Light mode text color */
+    transition: color 0.3s ease;
+    font-family: 'YourCustomFontName', Arial, sans-serif; /* Apply custom font here too if desired */
+}
+
+.countValue {
+    font-weight: bold;
+    color: #007bff; /* Light mode value color */
+    transition: color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+.darkTheme {
+    background-color: #282c34; /* Dark background */
+    border-color: #61dafb; /* Accent border color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.darkText {
+    color: #f0f0f0; /* Light text for dark mode */
+}
+
+.darkValue {
+    color: #61dafb; /* Accent color for value in dark mode */
+}
+
+/* Button Group and Buttons */
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'YourCustomFontName', Arial, sans-serif; /* Apply custom font here too if desired */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.resetButton {
+    background-color: #dc3545;
+}
+
+.resetButton:hover {
+    background-color: #c82333;
+}
+
+.themeToggleContainer {
+    margin-top: 15px;
+}
