@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin: 5px; /* Added for spacing between buttons */
+}
+
+/* Filled Mode (Default) */
+.button-filled {
+  background-color: #6a8cff; /* Example blue color */
+  color: white;
+  border: 1px solid #6a8cff;
+}
+
+.button-filled:hover {
+  background-color: #4d70e0;
+  border-color: #4d70e0;
+}
+
+/* Outline Mode */
+.button-outline {
+  background-color: transparent;
+  color: #6a8cff;
+  border: 1px solid #6a8cff;
+}
+
+.button-outline:hover {
+  background-color: #e6efff;
+  color: #4d70e0;
+  border-color: #4d70e0;
+}
+
+/* Text-only Mode */
+.button-text {
+  background-color: transparent;
+  color: #6a8cff;
+  border: none;
+  padding: 8px 12px; /* Slightly less padding for text-only */
+}
+
+.button-text:hover {
+  background-color: rgba(106, 140, 255, 0.1); /* Light transparent background on hover */
+  color: #4d70e0;
+}
+
+/* Icon Styling */
+.button-icon {
+  display: flex; /* Ensures icon is properly aligned */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.button-text-content {
+  /* No specific styling needed here unless you want to override default text styles */
+}
