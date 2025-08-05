@@ -1,0 +1,130 @@
+.input-group {
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.input-label {
+  display: block;
+  color: #4b5563; /* text-gray-700 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.input-control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* space-x-3 */
+}
+
+.range-slider {
+  width: 100%;
+  height: 0.5rem; /* h-2 */
+  background-color: #e5e7eb; /* bg-gray-200 */
+  border-radius: 0.5rem; /* rounded-lg */
+  -webkit-appearance: none; /* appearance-none */
+  appearance: none;
+  cursor: pointer;
+  margin: 0; /* Remove default margin */
+}
+
+/* Custom styling for range slider thumb (Webkit - Chrome, Safari) */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem; /* 16px */
+  height: 1rem; /* 16px */
+  border-radius: 50%;
+  background: #22c55e; /* Green-500 */
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #22c55e;
+  margin-top: -0.25rem; /* Adjust thumb position to center vertically */
+}
+
+/* Custom styling for range slider thumb (Mozilla - Firefox) */
+.range-slider::-moz-range-thumb {
+  width: 1rem; /* 16px */
+  height: 1rem; /* 16px */
+  border-radius: 50%;
+  background: #22c55e; /* Green-500 */
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #22c55e;
+}
+
+/* Custom styling for range slider track (Webkit - Chrome, Safari) */
+.range-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.125rem; /* 2px */
+  background: #d1d5db; /* Gray-300 */
+  border-radius: 0.125rem; /* 2px */
+}
+
+/* Custom styling for range slider track (Mozilla - Firefox) */
+.range-slider::-moz-range-track {
+  width: 100%;
+  height: 0.125rem; /* 2px */
+  background: #d1d5db; /* Gray-300 */
+  border-radius: 0.125rem; /* 2px */
+}
+
+.input-text-wrapper {
+  position: relative;
+}
+
+.currency-symbol,
+.unit-symbol {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280; /* text-gray-500 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.currency-symbol {
+  left: 0.5rem; /* left-2 */
+}
+
+.unit-symbol {
+  right: 0.5rem; /* right-2 */
+}
+
+.text-input {
+  width: 8rem; /* w-32 or w-28 */
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem; /* px-3 */
+  padding-right: 0.75rem;
+  border: 1px solid #d1d5db; /* border border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.text-input.text-input-green {
+  color: #166534; /* text-green-700 */
+  background-color: #f0fdf4; /* bg-green-50 */
+  font-weight: 500; /* font-medium */
+}
+
+.text-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #22c55e; /* focus:border-green-500 */
+  box-shadow: 0 0 0 1px #22c55e; /* focus:ring-green-500 */
+}
+
+.text-input.text-right {
+  text-align: right;
+}
+
+/* Specific width adjustments for number inputs */
+.input-group:nth-of-type(1) .text-input { /* Loan Amount */
+  width: 8rem; /* w-32 */
+  padding-left: 2rem; /* pl-8 */
+}
+
+.input-group:nth-of-type(2) .text-input, /* Interest Rate */
+.input-group:nth-of-type(3) .text-input { /* Loan Tenure */
+  width: 7rem; /* w-28 */
+}

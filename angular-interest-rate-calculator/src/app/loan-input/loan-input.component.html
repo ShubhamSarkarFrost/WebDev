@@ -1,0 +1,87 @@
+<div class="input-group">
+  <label for="loanAmount" class="input-label">Loan amount</label>
+  <div class="input-control-group">
+    <input
+      type="range"
+      id="loanAmount"
+      name="loanAmount"
+      [(ngModel)]="loanAmount"
+      (input)="onInputChange()"
+      [min]="minLoanAmount"
+      [max]="maxLoanAmount"
+      [step]="stepLoanAmount"
+      class="range-slider"
+    >
+    <div class="input-text-wrapper">
+      <span class="currency-symbol">₹</span>
+      <input
+        type="number"
+        [(ngModel)]="loanAmount"
+        (input)="onInputChange()"
+        [min]="minLoanAmount"
+        [max]="maxLoanAmount"
+        [step]="stepLoanAmount"
+        class="text-input text-input-green text-right"
+      >
+    </div>
+  </div>
+</div>
+
+<div class="input-group">
+  <label for="interestRate" class="input-label">Rate of interest (p.a)</label>
+  <div class="input-control-group">
+    <input
+      type="range"
+      id="interestRate"
+      name="interestRate"
+      [(ngModel)]="interestRate"
+      (input)="onInputChange()"
+      [min]="minInterestRate"
+      [max]="maxInterestRate"
+      [step]="stepInterestRate"
+      class="range-slider"
+    >
+    <div class="input-text-wrapper">
+      <input
+        type="number"
+        [(ngModel)]="interestRate"
+        (input)="onInputChange()"
+        [min]="minInterestRate"
+        [max]="maxInterestRate"
+        [step]="stepInterestRate"
+        class="text-input text-input-green text-right"
+      >
+      <span class="unit-symbol">%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Loan Tenure Input -->
+<div class="input-group">
+  <label for="loanTenure" class="input-label">Loan tenure</label>
+  <div class="input-control-group">
+    <input
+      type="range"
+      id="loanTenure"
+      name="loanTenure"
+      [(ngModel)]="loanTenure"
+      (input)="onInputChange()"
+      [min]="minLoanTenure"
+      [max]="maxLoanTenure"
+      [step]="stepLoanTenure"
+      class="range-slider"
+    >
+    <div class="input-text-wrapper">
+      <input
+        type="number"
+        [(ngModel)]="loanTenure"
+        (input)="onInputChange()"
+        [min]="minLoanTenure"
+        [max]="maxLoanTenure"
+        [step]="stepLoanTenure"
+        class="text-input text-input-green text-right"
+      >
+      <span class="unit-symbol">Yr</span>
+    </div>
+  </div>
+</div>

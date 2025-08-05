@@ -1,0 +1,73 @@
+<!-- Summary section with calculated values and donut chart -->
+<div class="summary-container">
+  <!-- Donut Chart and Legend -->
+  <div class="chart-legend-group">
+    <!-- Chart Legend -->
+    <div class="chart-legend-item">
+      <div class="legend-color-box principal-color"></div>
+      <span class="legend-text">Principal amount</span>
+    </div>
+    <div class="chart-legend-item">
+      <div class="legend-color-box interest-color"></div>
+      <span class="legend-text">Interest amount</span>
+    </div>
+
+    <!-- Donut Chart (SVG based for simplicity) -->
+    <div class="donut-chart-wrapper">
+      <svg class="donut-chart-svg" viewBox="0 0 36 36">
+        <!-- Background circle -->
+        <circle
+          class="chart-background-circle"
+          stroke-width="3"
+          cx="18"
+          cy="18"
+          r="15.915494309189535"
+          fill="transparent"
+        ></circle>
+        <!-- Principal amount segment -->
+        <circle
+          class="chart-principal-segment"
+          stroke-width="3"
+          [attr.stroke-dasharray]="principalPercentage + ', 100'"
+          stroke-linecap="round"
+          cx="18"
+          cy="18"
+          r="15.915494309189535"
+          fill="transparent"
+          [attr.transform]="'rotate(-90 18 18)'"
+        ></circle>
+        <circle
+          class="chart-interest-segment"
+          stroke-width="3"
+          [attr.stroke-dasharray]="interestPercentage + ', 100'"
+          stroke-linecap="round"
+          cx="18"
+          cy="18"
+          r="15.915494309189535"
+          fill="transparent"
+          [attr.transform]="'rotate(' + (principalPercentage * 3.6 - 90) + ' 18 18)'"
+        ></circle>
+      </svg>
+    </div>
+  </div>
+
+  <div class="calculated-values">
+    <div class="value-item">
+      <span class="value-label">Monthly EMI</span>
+      <span class="value-display value-display-green">{{ formatCurrency(monthlyEMI) }}</span>
+    </div>
+    <div class="value-item">
+      <span class="value-label">Principal amount</span>
+      <span class="value-display">{{ formatCurrency(principalAmount) }}</span>
+    </div>
+    <div class="value-item">
+      <span class="value-label">Total interest</span>
+      <span class="value-display">{{ formatCurrency(totalInterest) }}</span>
+    </div>
+    <div class="value-item">
+      <span class="value-label">Total amount</span>
+      <span class="value-display">{{ formatCurrency(totalAmount) }}</span>
+    </div>
+  </div>
+</div>
+```

@@ -1,0 +1,39 @@
+<!-- Main container for the entire calculator application -->
+<div class="app-container">
+  <!-- Calculator card container -->
+  <div class="calculator-card">
+    <!-- Calculator Title -->
+    <h1 class="calculator-title">Interest Rate Calculator</h1>
+
+    <!-- Main content area: Loan Input and Summary -->
+    <div class="main-content">
+      <!-- Left side: Loan Input Component -->
+      <div>
+        <app-loan-input
+          [loanAmount]="loanAmount"
+          [interestRate]="interestRate"
+          [loanTenure]="loanTenure"
+          (loanInputChange)="onLoanInputChange($event)"
+        ></app-loan-input>
+      </div>
+
+      <!-- Right side: Summary Component -->
+      <div>
+        <app-summary
+          [monthlyEMI]="monthlyEMI"
+          [principalAmount]="principalAmountCalculated"
+          [totalInterest]="totalInterest"
+          [totalAmount]="totalAmount"
+        ></app-summary>
+      </div>
+    </div>
+
+    <!-- Amortization Details Component -->
+    <div class="amortization-section">
+      <app-amortization></app-amortization>
+    </div>
+  </div>
+</div>
+
+
+

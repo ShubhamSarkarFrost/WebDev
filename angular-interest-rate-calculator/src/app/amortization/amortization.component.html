@@ -1,0 +1,29 @@
+<!-- Amortization Details section -->
+<div class="amortization-details-container">
+  <span class="amortization-label">Your Amortization Details (Yearly/Monthly)</span>
+  <button
+    (click)="toggleAmortization()"
+    class="toggle-button"
+  >
+    <!-- Plus/Minus icon based on expansion state -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" *ngIf="!isExpanded" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" *ngIf="isExpanded" />
+    </svg>
+  </button>
+
+  <!-- Placeholder for amortization table - hidden by default -->
+  <div *ngIf="isExpanded" class="amortization-placeholder">
+    <!-- This is where your amortization table would go -->
+    <p class="placeholder-text">
+      Amortization table will be displayed here when expanded.
+    </p>
+  </div>
+</div>
